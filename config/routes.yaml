@@ -1,0 +1,89 @@
+eventos:
+  path: /eventos
+  controller: App\Controller\EventoController::buscarTodos
+  methods:
+    - GET
+
+criar_evento:
+  path: /eventos
+  controller: App\Controller\EventoController::novo
+  methods:
+    - POST
+
+atualiza_evento:
+  path: /eventos/{id}
+  controller: App\Controller\EventoController::atualiza
+  methods:
+    - PUT
+
+evento:
+  path: /eventos/{id}
+  controller: App\Controller\EventoController::buscarUm
+  methods:
+    - GET
+
+remove_evento:
+  path: /eventos/{id}
+  controller: App\Controller\EventoController::remove
+  methods:
+    - DELETE
+
+palestras:
+  path: /palestras
+  controller: App\Controller\PalestraController::buscarTodos
+  methods:
+    - GET
+
+criar_palestra:
+  path: /palestras
+  controller: App\Controller\PalestraController::novo
+  methods:
+    - POST
+
+atualiza_palestra:
+  path: /palestras/{id}
+  controller: App\Controller\PalestraController::atualiza
+  methods:
+    - PUT
+
+palestra:
+  path: /palestras/{id}
+  controller: App\Controller\PalestraController::buscarUm
+  methods:
+    - GET
+
+remove_palestra:
+  path: /palestras/{id}
+  controller: App\Controller\PalestraController::remove
+  methods:
+    - DELETE
+
+palestrantes:
+  path: /palestrantes
+  controller: App\Controller\PalestranteController::buscarTodos
+  methods:
+    - GET
+
+criar_palestrante:
+  path: /palestrantes
+  controller: App\Controller\PalestranteController::novo
+  methods:
+    - POST
+
+atualiza_palestrante:
+  path: /palestrantes/{id}
+  controller: App\Controller\PalestranteController::atualiza
+  methods:
+    - PUT
+
+palestrante:
+  path: /palestrantes/{id}
+  controller: App\Controller\PalestranteController::buscarUm
+  methods:
+    - GET
+
+remove_palestrante:
+  path: /palestrantes/{id}
+  controller: App\Controller\PalestranteController::remove
+  methods:
+    - DELETE
