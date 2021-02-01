@@ -12,33 +12,52 @@ A aplicação será para um sistema de eventos, onde o principal serviço é cri
 
 #Todo evento tem:
 
-● Titulo 
-● Data e hora de Inicio 
-● Data e hora de Fim 
-● Descrição #Toda palestra tem: 
-● Titulo 
-● Data 
-● Evento (relacionamento) 
-● hora de Inicio 
-● hora de Fim 
-● Descrição 
-● Palestrante (pode ser apenas texto, mas se fizer outro crud aumenta a pontuação) Obs: Não é obrigatório o uso de autenticação, mas se quiser pode, e valerá pontos a mais
+###● Titulo 
 
-Foram utilizado os seguintes componentes:
+###● Data e hora de Inicio 
 
-● Annotations 
-● ORM Doctrine 
-● Security 
-● Firebase/php-jwt 
-● Orm-fixtures 
-● Maker-bundle(Somente para a parte de autenticação que no momento da criação ainda não sabia implementar na "unha")
+###● Data e hora de Fim 
+
+###● Descrição #Toda palestra tem: 
+
+###● Titulo 
+
+###● Data 
+
+###● Evento (relacionamento) 
+
+###● hora de Inicio 
+
+###● hora de Fim 
+
+###● Descrição 
+
+###● Palestrante (pode ser apenas texto, mas se fizer outro crud aumenta a pontuação) Obs: Não é obrigatório o uso de autenticação, mas se quiser pode, e valerá pontos a mais
+
+
+##Foram utilizado os seguintes componentes:
+
+###● Annotations 
+
+###● ORM Doctrine 
+
+###● Security 
+
+###● Firebase/php-jwt 
+
+###● Orm-fixtures 
+
+###● Maker-bundle(Somente para a parte de autenticação que no momento da criação ainda não sabia implementar na "unha")
 
 API's contruidas com OO utilizando uma classe abstrata para realizar o CRUD, interfaces, repositories e factorys para que cada resposabilidade ficasse bem separada. Após a implementação feita, inseri paginação dos dados, informações de respostas e a autenticação.
 
 As entidades das API's são: 
-● Evento 
-● Escopo 
+###● Evento 
+
+###● Escopo 
+
   { 
+
     "titulo": "", 
     "dataInicial": "", 
     "horaInicial": "", 
@@ -48,8 +67,11 @@ As entidades das API's são:
    }
 
 ● Palestra 
+
 ● Escopo 
-  { 
+
+  {
+
     "titulo": "", 
     "data": "", 
     "eventoId": 0, => Realcionamento com entidade evento 
@@ -57,12 +79,17 @@ As entidades das API's são:
     "horaFinal": "",
     "descricao": "",
     "palestranteId": 0 => Relacionamento com entidade palestrante 
-   }
+   
+}
 
 ● Palestrante 
+
 ● Escopo 
+
   { 
+
     "nome": "" 
+
   }
 
 Obs: Defini o username como 'alessandro' (avaliador). Caso queira alterar para persistir no DB, em 'src\DataFixtures\UserFixtures'
